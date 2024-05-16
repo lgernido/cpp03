@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 11:48:17 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/16 13:58:09 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/16 14:10:17 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,16 @@ ScavTrap::~ScavTrap()
     std::cout << BOLD << "ScavTrap " << RESET << UNDERLINE << "Destructor" << RESET << " called" << std::endl;
 }
 
+//Copy Constructor
+
+ScavTrap::ScavTrap(const ScavTrap& aScavTrap)
+{
+    this->name = aScavTrap.getName();
+    this->hit_points = aScavTrap.getHitPoints();
+    this->energy_points = aScavTrap.getEnergyPoints();
+    this->attack_damage = aScavTrap.getAttackDamage();
+}
+
 //Other Constructor
 ScavTrap::ScavTrap(std::string name)
 {
@@ -36,6 +46,21 @@ ScavTrap::ScavTrap(std::string name)
     this->attack_damage = 20;
     std::cout << BOLD << "ScavTrap " << RESET << UNDERLINE << "name constuctor" << RESET \
     << " called" << std::endl;
+}
+
+/*OPERATOR OVERLOARD*/
+
+ScavTrap& ScavTrap::operator=(const ScavTrap& aScavTrap)
+{
+    if (this == &aScavTrap)
+        return *this;
+        
+    this->name = aScavTrap.getName();
+    this->hit_points = aScavTrap.getHitPoints();
+    this->energy_points = aScavTrap.getEnergyPoints();
+    this->attack_damage = aScavTrap.getAttackDamage();
+
+    return *this;
 }
 
 /*PUBLIC METHODS*/
