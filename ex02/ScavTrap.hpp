@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 11:47:43 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/16 13:30:33 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/16 14:16:28 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,10 @@ class ScavTrap : public ClapTrap
         ScavTrap();
         ~ScavTrap();
         ScavTrap(std::string name);
+
+        ScavTrap(const ScavTrap& aScavTrap);
+        
+        ScavTrap& operator=(const ScavTrap& aScavTrap);
 
         void attack(const std::string& target);
         void guardGate();
