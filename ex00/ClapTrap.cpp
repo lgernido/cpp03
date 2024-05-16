@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:33 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/16 11:45:31 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/16 13:56:36 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 /*CONSTRUCTORS & DESTRUCTORS*/
 
 //Default constructor
-ClapTrap::ClapTrap() : name(NULL), hit_points(10), energy_points(10), attack_damage(0)
+ClapTrap::ClapTrap() : name("no name"), hit_points(10), energy_points(10), attack_damage(0)
 {
     std::cout << UNDERLINE << "Default constructor" << RESET << " called" << std::endl;
 }
