@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:35 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/16 14:25:41 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/17 15:03:55 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,56 @@
 int main(void)
 {
     {
-        FragTrap Kobe("Kobe");
-        FragTrap Lebron("Lebron");
+        /* Testing basic initialization test ClapTrap VS ScavTrap VS FragTrap*/
 
-        Kobe.attack("Lebron");
-        Kobe.beRepaired(10);
-        Lebron.takeDamage(80);
+        // ClapTrap Kobe("Kobe");
+        // ScavTrap Lebron("Lebron");
+        // FragTrap Magic ("Magic");
+
+        // Kobe.displayState();
+        // Lebron.displayState();
+        // Magic.displayState();
+    }
+    {
+        /*Testing attack function ScavTrap VS FargTrap*/
+
+        // ScavTrap Lebron("Lebron");
+        // FragTrap Magic ("Magic");
+
+        // Lebron.attack("Steph");
+        // Magic.attack("Larry");
+
+        // Lebron.displayState();
+        // Magic.displayState();
+    }
+    {
+        /*Testing FargTrap' high five function*/
+
+        // FragTrap Magic("Magic");
+
+        // Magic.highFivesGuys();
+        // Magic.displayState();
+    }
+    {
+        /*Testing multiple things all at once*/
+
+        ClapTrap Kobe("Kobe");
+        ScavTrap Lebron("Lebron");
+        FragTrap Magic ("Magic");
+
+        Kobe.attack("Shaq");
+        Lebron.takeDamage(30);
         Lebron.beRepaired(10);
-        Kobe.highFivesGuys();
-        Lebron.attack("Kobe");
-        Lebron.takeDamage(20);
-        Lebron.attack("Kobe");
+        Magic.attack("Larry");
+        Magic.takeDamage(100);
+        Magic.attack("Larry");
+        Magic.beRepaired(40);
+        Lebron.guardGate();
+        Kobe.beRepaired(2);
+        Magic.highFivesGuys();
+
         Kobe.displayState();
         Lebron.displayState();
+        Magic.displayState();
     }
 }

@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:35 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/16 17:16:37 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/17 16:06:25 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,19 +18,66 @@
 int main(void)
 {
     {
-        DiamondTrap Kobe("Kobe");
-        DiamondTrap Lebron("Lebron");
+        /*Testing basic initialization VS other classes*/
 
-        Kobe.attack("Lebron");
+        // ClapTrap Kobe("Kobe");
+        // ScavTrap Lebron("Lebron");
+        // FragTrap Magic ("Magic");
+        // DiamondTrap Kyrie("Kyrie");
+
+        // Kobe.displayState();
+        // Lebron.displayState();
+        // Magic.displayState();
+        // Kyrie.displayState();
+    }
+    {
+        /*Testing both names of Diamond Trap*/
+
+        // DiamondTrap Kyrie("Kyrie");
+        // Kyrie.whoAmI();
+        // Kyrie.displayState();
+    }
+    {
+        /*Testing the copy of Diamond Trap*/
+        
+        // DiamondTrap Kyrie("Kyrie");
+        // DiamondTrap Luka(Kyrie);
+
+        // Kyrie.displayState();
+        // Luka.displayState();
+        
+        // Luka.whoAmI();
+    }
+    {
+        /*Testing multiple things all at once*/
+
+        ClapTrap Kobe("Kobe");
+        ScavTrap Lebron("Lebron");
+        FragTrap Magic("Magic");
+        DiamondTrap Kyrie("Kyrie");
+
+        Kobe.attack("Shaq");
+        Lebron.attack("Steph");
+        Magic.attack("Larry");
+        Kyrie.attack("Luka");
+
         Kobe.beRepaired(10);
-        Lebron.takeDamage(80);
-        Lebron.beRepaired(10);
-        Kobe.highFivesGuys();
-        Lebron.attack("Kobe");
-        Lebron.takeDamage(20);
-        Lebron.attack("Kobe");
+        Lebron.beRepaired(15);
+        Magic.beRepaired(20);
+        Kyrie.beRepaired(30);
+
+        Kobe.takeDamage(10);
+        Lebron.takeDamage(5);
+        Magic.takeDamage(33);
+        Kyrie.takeDamage(2);
+
+        Lebron.guardGate();
+        Magic.highFivesGuys();
+        Kyrie.whoAmI();
+
         Kobe.displayState();
-        Lebron.whoAmI();
         Lebron.displayState();
+        Magic.displayState();
+        Kyrie.displayState();        
     }
 }

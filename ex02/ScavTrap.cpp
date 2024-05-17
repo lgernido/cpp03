@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 11:48:17 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/16 14:19:02 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/17 15:11:51 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,15 @@
 //Default Constructor
 ScavTrap::ScavTrap() : ClapTrap()
 {
-    std::cout << BOLD << "ScavTrap " << RESET << UNDERLINE << "Default constructor" << RESET << " called" << std::endl;
-    
+    std::cout << BOLD << "ScavTrap " << RESET << ITALIC << "Default constructor" << RESET << " called" << std::endl;
+    std::cout << std::endl;
 }
 
 //Default Destructor
 ScavTrap::~ScavTrap()
 {
-    std::cout << BOLD << "ScavTrap " << RESET << UNDERLINE << "Destructor" << RESET << " called" << std::endl;
+    std::cout << BOLD << "ScavTrap " << RESET << ITALIC << "destructor" << RESET << " called" << std::endl;
+    std::cout << std::endl;
 }
 
 //Copy Constructor
@@ -34,17 +35,21 @@ ScavTrap::ScavTrap(const ScavTrap& aScavTrap)
     this->hit_points = aScavTrap.getHitPoints();
     this->energy_points = aScavTrap.getEnergyPoints();
     this->attack_damage = aScavTrap.getAttackDamage();
+    std::cout << BOLD << "ScavTrap " << RESET << ITALIC << "copy constuctor" << RESET \
+    << " called" << RESET << std::endl;
+    std::cout << std::endl;
 }
 
-//Other Constructor
+//Name Constructor
 ScavTrap::ScavTrap(std::string name)
 {
     this->name = name;
     this->hit_points = 100;
-    this->energy_points = 100;
+    this->energy_points = 50;
     this->attack_damage = 20;
-    std::cout << BOLD << "ScavTrap " << RESET << UNDERLINE << "name constuctor" << RESET \
-    << " called" << std::endl;
+    std::cout << BOLD << "ScavTrap " << RESET << ITALIC << "name constuctor" << RESET \
+    << " called" <<RESET << std::endl;
+    std::cout << std::endl;
 }
 
 /*OPERATOR OVERLOARD*/
@@ -66,7 +71,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& aScavTrap)
 
 void ScavTrap::attack(const std::string& target)
 {
-    if (this->hit_points == 0)
+    if (this->hit_points <= 0)
     {
         std::cout << ORANGE << "Scav Trap " << BOLD << ORANGE << this->getName() << \
          RESET << ORANGE << " has " << BOLD << ORANGE << this->getHitPoints() \
@@ -75,7 +80,7 @@ void ScavTrap::attack(const std::string& target)
 
         return;
     }
-    else if (this->energy_points == 0)
+    else if (this->energy_points <= 0)
     {
         std::cout << BOLD << RED << "No energy points left for " << \
         RESET << RED << "Scav Trap " << BOLD << this->getName() << std::endl;

@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:33 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/16 16:26:28 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/17 15:35:01 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,31 +16,35 @@
 /*CONSTRUCTORS & DESTRUCTORS*/
 
 //Default constructor
-ClapTrap::ClapTrap() : hit_points(100), energy_points(50), attack_damage(30)
+ClapTrap::ClapTrap()
 {
-    std::cout << UNDERLINE << "Default constructor" << RESET << " called" << std::endl;
+    std::cout << BOLD << "Clap Trap " << RESET << ITALIC << "default constructor" << RESET << " called" << std::endl;
+    std::cout << std::endl;
 }
 
 //Default destuctor
 ClapTrap::~ClapTrap()
 {
-    std::cout << UNDERLINE << "Default destructor" << RESET << " called" << std::endl;
+    std::cout << BOLD << "Clap Trap " << RESET << ITALIC << "destructor" << RESET << " called" << std::endl;
+    std::cout << std::endl;
 }
 
 //Copy constructor
 ClapTrap::ClapTrap(const ClapTrap& aClapTrap)
 {
-    std::cout << UNDERLINE << "Copy constructor " << RESET << "called" << std::endl;
+    std::cout << BOLD << "Clap Trap " << RESET << ITALIC << "copy constructor " << RESET << "called" << std::endl;
     this->name = aClapTrap.getName();
     this->hit_points = aClapTrap.getHitPoints();
     this->energy_points = aClapTrap.getEnergyPoints();
     this->attack_damage = aClapTrap.getAttackDamage();
+    std::cout << std::endl;
 }
 
-//Other constuctor
-ClapTrap::ClapTrap(std::string name) : name(name), hit_points(100), energy_points(50), attack_damage(30)
+//Name constuctor
+ClapTrap::ClapTrap(std::string name) : name(name), hit_points(10), energy_points(10), attack_damage(0)
 {
-    std::cout << UNDERLINE << "Name constructor" << RESET << " called" << std::endl;
+    std::cout << BOLD << "Clap Trap " << RESET << ITALIC << "Name constructor" << RESET << " called" << std::endl;
+    std::cout << std::endl;
 }
 
 /*OPERATOR OVERLOAD*/
@@ -62,7 +66,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& aClapTrap)
 
 void ClapTrap::attack(const std::string& target)
 {
-    if (this->hit_points == 0)
+    if (this->hit_points <= 0)
     {
         std::cout << ORANGE << "Clap Trap " << BOLD << ORANGE << this->getName() << \
          RESET << ORANGE << " has " << BOLD << ORANGE << this->getHitPoints() \
@@ -71,10 +75,11 @@ void ClapTrap::attack(const std::string& target)
 
         return;
     }
-    else if (this->energy_points == 0)
+    else if (this->energy_points <= 0)
     {
         std::cout << BOLD << RED << "No energy points left for " << \
         RESET << RED << "Clap Trap " << BOLD << this->getName() << std::endl;
+        std::cout << std::endl;
     }
     else
     {
@@ -99,7 +104,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-    if (this->energy_points == 0)
+    if (this->energy_points <= 0)
     {
         std::cout << BOLD << RED << "No energy points left for " << \
         RESET << RED << "Clap Trap " << BOLD << this->getName() << std::endl;

@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:09 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/16 11:37:54 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/17 13:15:15 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@
 class ClapTrap
 {
   public :
-    ClapTrap();
     ~ClapTrap();
     ClapTrap(std::string name);
     
@@ -59,6 +58,7 @@ class ClapTrap
     void displayState(void);
 
   private :
+    ClapTrap();
     std::string name;
     int hit_points;
     int energy_points;

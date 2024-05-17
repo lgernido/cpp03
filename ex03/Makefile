@@ -52,11 +52,11 @@ clean :
 	@rm -rf ${BUILD}
 	@#@rm -f *.txt
 	@rm -f *.o ${OBJ_FILES_BONUS}
-	@echo "$(CYAN) Cleaning intermediary files $(RESET)"
+	@echo "$(CYAN)Cleaning intermediary files $(RESET)"
 
 fclean : clean
 	@rm -f ${NAME}
-	@echo "$(GREEN) Cleaning is complete $(RESET)"
+	@echo "$(GREEN)Cleaning is complete $(RESET)"
 
 bonus : $(OBJ_FILES_BONUS)
 	@$(CC) $(CFLAGS) $(OBJ_FILES_BONUS) -o $(NAME)

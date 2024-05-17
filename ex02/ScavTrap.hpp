@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 11:47:43 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/16 14:16:28 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/17 13:43:47 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@
 class ScavTrap : public ClapTrap
 {
     public :
-        ScavTrap();
         ~ScavTrap();
         ScavTrap(std::string name);
 
@@ -44,6 +43,7 @@ class ScavTrap : public ClapTrap
 
 
     private : 
+        ScavTrap();
         
 };
 

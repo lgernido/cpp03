@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 14:01:09 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/16 15:44:15 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/17 16:07:28 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 class FragTrap : public virtual ClapTrap
 {
     public :
-        FragTrap();
         ~FragTrap();
         FragTrap(std::string name);
 
@@ -28,6 +27,9 @@ class FragTrap : public virtual ClapTrap
 
         void highFivesGuys(void);
 
+    protected :
+        FragTrap();
+    
     private : 
         
 };
