@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:33 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/17 15:05:26 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/19 10:45:31 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ ClapTrap::ClapTrap(const ClapTrap& aClapTrap)
     this->hit_points = aClapTrap.getHitPoints();
     this->energy_points = aClapTrap.getEnergyPoints();
     this->attack_damage = aClapTrap.getAttackDamage();
-    std::cout << BOLD << "ClapTrap " << RESET << UNDERLINE << "copy constructor " << RESET << "called" << std::endl;
+    std::cout << BOLD << "ClapTrap " << RESET << ITALIC << "copy constructor " << RESET << "called" << std::endl;
     std::cout << std::endl;
 }
 
