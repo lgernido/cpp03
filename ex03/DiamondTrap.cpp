@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 14:31:11 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/17 15:59:42 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/19 13:12:24 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ DiamondTrap::~DiamondTrap()
     std::cout << std::endl;
 }
 
-//Other Constructor
+//Name Constructor
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name")
 {
     this->name = name;

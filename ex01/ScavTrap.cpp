@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 11:48:17 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/17 15:13:15 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/19 13:06:14 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,9 @@ ScavTrap::ScavTrap(const ScavTrap& aScavTrap)
     this->hit_points = aScavTrap.getHitPoints();
     this->energy_points = aScavTrap.getEnergyPoints();
     this->attack_damage = aScavTrap.getAttackDamage();
+    std::cout << BOLD << "ScavTrap " << RESET << ITALIC << "copy constructor" << RESET \
+    << " called" << std::endl;
+    std::cout << std::endl;
 }
 
 //Other Constructor

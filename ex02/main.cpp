@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:35 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/17 15:03:55 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/19 13:10:26 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,18 @@ int main(void)
 
         // Magic.highFivesGuys();
         // Magic.displayState();
+    }
+    {
+        /*Testing FragTrap copy constructor*/
+
+        // FragTrap Magic("Magic");
+        // FragTrap Kareem(Magic);
+        
+        // Kareem.setName("Kareem");
+        // Kareem.highFivesGuys();
+
+        // Magic.displayState();
+        // Kareem.displayState();
     }
     {
         /*Testing multiple things all at once*/

@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:35 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/17 14:14:08 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/19 13:06:56 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,18 @@ int main(void)
         // ScavTrap Lebron("Lebron");
         // Lebron.guardGate();
         // Lebron.displayState();
+    }
+    {
+        /*Testing copy constructor with setting new name and attack damage */
+
+        // ScavTrap Lebron("Lebron");
+        // ScavTrap Bronny(Lebron);
+
+        // Bronny.setName("Bronny");
+        // Bronny.setAttackDamage(1);
+
+        // Lebron.displayState();
+        // Bronny.displayState();
     }
     {
         /*Testing multiple things all at once*/
