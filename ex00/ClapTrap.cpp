@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:33 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/19 10:45:31 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/20 09:05:30 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 {
     std::cout << RED << "Clap Trap " << RED << BOLD << this->getName() << \
     RESET << RED << " suffered " << RED << BOLD << amount << RESET << \
-    RED << " points of damage!" << std::endl;
+    RED << " points of damage!" << RESET << std::endl;
     std::cout << std::endl;
     this->loseHit(amount);
 }
