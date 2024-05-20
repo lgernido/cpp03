@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 14:31:11 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/19 13:12:24 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/20 09:26:15 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*CONSTRUCTORS & DESTRUCTORS*/
 
 //Default Constructor
-DiamondTrap::DiamondTrap() : ClapTrap(), FragTrap(), ScavTrap()
+DiamondTrap::DiamondTrap() : ClapTrap()
 {
     std::cout << BOLD << "Diamond Trap " << RESET << ITALIC << "Default constructor" << RESET << " called" << std::endl;    
     std::cout << std::endl;

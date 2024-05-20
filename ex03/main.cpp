@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:35 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/19 13:16:38 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/20 09:25:01 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,33 +51,33 @@ int main(void)
     {
         /*Testing multiple things all at once*/
 
-        // ClapTrap Kobe("Kobe");
-        // ScavTrap Lebron("Lebron");
-        // FragTrap Magic("Magic");
-        // DiamondTrap Kyrie("Kyrie");
+        ClapTrap Kobe("Kobe");
+        ScavTrap Lebron("Lebron");
+        FragTrap Magic("Magic");
+        DiamondTrap Kyrie("Kyrie");
 
-        // Kobe.attack("Shaq");
-        // Lebron.attack("Steph");
-        // Magic.attack("Larry");
-        // Kyrie.attack("Luka");
+        Kobe.attack("Shaq");
+        Lebron.attack("Steph");
+        Magic.attack("Larry");
+        Kyrie.attack("Luka");
 
-        // Kobe.beRepaired(10);
-        // Lebron.beRepaired(15);
-        // Magic.beRepaired(20);
-        // Kyrie.beRepaired(30);
+        Kobe.beRepaired(10);
+        Lebron.beRepaired(15);
+        Magic.beRepaired(20);
+        Kyrie.beRepaired(30);
 
-        // Kobe.takeDamage(10);
-        // Lebron.takeDamage(5);
-        // Magic.takeDamage(33);
-        // Kyrie.takeDamage(2);
+        Kobe.takeDamage(10);
+        Lebron.takeDamage(5);
+        Magic.takeDamage(33);
+        Kyrie.takeDamage(2);
 
-        // Lebron.guardGate();
-        // Magic.highFivesGuys();
-        // Kyrie.whoAmI();
+        Lebron.guardGate();
+        Magic.highFivesGuys();
+        Kyrie.whoAmI();
 
-        // Kobe.displayState();
-        // Lebron.displayState();
-        // Magic.displayState();
-        // Kyrie.displayState();        
+        Kobe.displayState();
+        Lebron.displayState();
+        Magic.displayState();
+        Kyrie.displayState();        
     }
 }
