@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 14:31:11 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/20 09:26:15 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/20 09:52:49 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,8 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& aDiamondTrap)
 {
     if (this == &aDiamondTrap)
         return *this;
-        
+
+    ClapTrap::setName(aDiamondTrap.getName() + "_clap_name");   
     this->name = aDiamondTrap.getName();
     this->hit_points = aDiamondTrap.getHitPoints();
     this->energy_points = aDiamondTrap.getEnergyPoints();

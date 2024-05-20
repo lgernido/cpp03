@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 14:31:32 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/17 16:06:48 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/20 09:49:47 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 class DiamondTrap : public FragTrap, public ScavTrap
 {
     public :
+        DiamondTrap();
         ~DiamondTrap();
         DiamondTrap(std::string name);
 
@@ -33,7 +34,6 @@ class DiamondTrap : public FragTrap, public ScavTrap
     protected : 
     
     private :
-        DiamondTrap();
         std::string name;
         std::string getName(void)const;
         
