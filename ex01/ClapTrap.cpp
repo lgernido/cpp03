@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 09:23:33 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/17 15:05:04 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/20 09:10:01 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 //Default constructor
 ClapTrap::ClapTrap()
 {
-    std::cout << ITALIC << "Default constructor" << RESET << " called" << std::endl;
+    std::cout << BOLD << "Clap Trap " << RESET << ITALIC << "default constructor" << RESET << " called" << std::endl;
     std::cout << std::endl;
 }
 
@@ -42,7 +42,7 @@ ClapTrap::ClapTrap(const ClapTrap& aClapTrap)
 //Name constuctor
 ClapTrap::ClapTrap(std::string name) : name(name), hit_points(10), energy_points(10), attack_damage(0)
 {
-    std::cout << BOLD << "ClapTrap " << ITALIC << "name constructor" << RESET << " called" << std::endl;
+    std::cout << BOLD << "ClapTrap " << RESET << ITALIC << "name constructor" << RESET << " called" << std::endl;
     std::cout << std::endl;
 }
 

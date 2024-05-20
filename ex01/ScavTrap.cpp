@@ -6,7 +6,7 @@
 /*   By: lgernido <lgernido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 11:48:17 by lgernido          #+#    #+#             */
-/*   Updated: 2024/05/19 13:06:14 by lgernido         ###   ########.fr       */
+/*   Updated: 2024/05/20 09:10:39 by lgernido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@
 //Default Constructor
 ScavTrap::ScavTrap() : ClapTrap()
 {
-    std::cout << BOLD << "ScavTrap " << RESET << ITALIC << "Default constructor" << RESET << " called" << std::endl;
+    std::cout << BOLD << "ScavTrap " << RESET << ITALIC << "default constructor" << RESET << " called" << std::endl;
     std::cout << std::endl;
 }
 
 //Default Destructor
 ScavTrap::~ScavTrap()
 {
-    std::cout << BOLD << "ScavTrap " << RESET << ITALIC << "Destructor" << RESET << " called" << std::endl;
+    std::cout << BOLD << "ScavTrap " << RESET << ITALIC << "destructor" << RESET << " called" << std::endl;
     std::cout << std::endl;
 }
 
